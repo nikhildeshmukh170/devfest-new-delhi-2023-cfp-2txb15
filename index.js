@@ -14,7 +14,7 @@ function decryptString(str) {
   let decryptedStr = '';
   for (let i = 0; i < str.length; i++) {
     decryptedStr += String.fromCharCode(
-      str.charCodeAt(i) - 2 // <-- TODO: The bug is here, can you find it?
+      str.charCodeAt(i) + 2 // <-- TODO: The bug is here, can you find it?
     );
   }
   return decryptedStr;
